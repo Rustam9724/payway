@@ -102,11 +102,6 @@ html, body {
         }
     }
 
-    // @media (max-width: 1450px) {
-    //     .logo {
-    //         width: 300px;
-    //     }
-    // }
 
     .nav {
         display: flex;
@@ -132,6 +127,7 @@ html, body {
             a {
                 color: #FDFEFF;
                 cursor: pointer;
+                // ff
 
                 &:hover {
                     color: #4CB8E9;
@@ -159,7 +155,7 @@ html, body {
     }
 }
 
-form {
+.form {
     max-width: 699px;
     margin: 0 auto;
     text-align: left;
@@ -181,6 +177,7 @@ form {
     
     label {
         display: block;
+        cursor: pointer;
 
         p {
             font-weight: medium;
@@ -229,6 +226,17 @@ form {
                     }
                 }
             }
+
+            .show-password {
+
+                &:hover {
+
+                     path {
+                        fill: white;
+                        stroke: white;
+                     }
+                }
+            }
         }
 
         @media (max-width: 799px) {
@@ -243,6 +251,16 @@ form {
 
         &.label_password {
             margin: 0 0 8px;
+        }
+
+        &.label_invalid {
+            p {
+                color: red;
+            }
+
+            div {
+                border-color: red;
+            }
         }
     }
     
@@ -293,7 +311,7 @@ form {
 }
 
 @media (max-width: 799px) {
-    form {
+    .form {
         max-width: 246px
     }
 }

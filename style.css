@@ -157,12 +157,12 @@ html, body {
     display: none;
   }
 }
-form {
+.form {
   max-width: 699px;
   margin: 0 auto;
   text-align: left;
 }
-form .title {
+.form .title {
   font-weight: medium;
   font-size: 3.5rem;
   line-height: 122.8571428571%;
@@ -170,15 +170,16 @@ form .title {
   margin: 0 0 18px;
 }
 @media (max-width: 799px) {
-  form .title {
+  .form .title {
     font-size: 2.5rem;
     margin: 0 0 26px;
   }
 }
-form label {
+.form label {
   display: block;
+  cursor: pointer;
 }
-form label p {
+.form label p {
   font-weight: medium;
   font-size: 2.5rem;
   line-height: 120%;
@@ -186,12 +187,12 @@ form label p {
   margin: 0 0 15px;
 }
 @media (max-width: 799px) {
-  form label p {
+  .form label p {
     font-size: 1.9rem;
     margin: 0 0 8px;
   }
 }
-form label div {
+.form label div {
   border: 1px solid #41586C;
   padding: 31px 13% 31px 18px;
   display: -webkit-box;
@@ -204,7 +205,7 @@ form label div {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-form label div input {
+.form label div input {
   outline: none;
   background-color: #15283F;
   width: 100%;
@@ -213,55 +214,65 @@ form label div input {
   line-height: 120%;
   color: #FDFEFF;
 }
-form label div input::-webkit-input-placeholder {
+.form label div input::-webkit-input-placeholder {
   font-family: Inter;
   font-size: 2.5rem;
   line-height: 120%;
 }
-form label div input:-ms-input-placeholder {
+.form label div input:-ms-input-placeholder {
   font-family: Inter;
   font-size: 2.5rem;
   line-height: 120%;
 }
-form label div input::-ms-input-placeholder {
+.form label div input::-ms-input-placeholder {
   font-family: Inter;
   font-size: 2.5rem;
   line-height: 120%;
 }
-form label div input::placeholder {
+.form label div input::placeholder {
   font-family: Inter;
   font-size: 2.5rem;
   line-height: 120%;
 }
 @media (max-width: 799px) {
-  form label div input {
+  .form label div input {
     font-size: 1.5rem;
   }
-  form label div input::-webkit-input-placeholder {
+  .form label div input::-webkit-input-placeholder {
     font-size: 1.5rem;
   }
-  form label div input:-ms-input-placeholder {
+  .form label div input:-ms-input-placeholder {
     font-size: 1.5rem;
   }
-  form label div input::-ms-input-placeholder {
+  .form label div input::-ms-input-placeholder {
     font-size: 1.5rem;
   }
-  form label div input::placeholder {
+  .form label div input::placeholder {
     font-size: 1.5rem;
   }
 }
+.form label div .show-password:hover path {
+  fill: white;
+  stroke: white;
+}
 @media (max-width: 799px) {
-  form label div {
+  .form label div {
     padding: 16px 9px;
   }
 }
-form label.label_email {
+.form label.label_email {
   margin: 0 0 28px;
 }
-form label.label_password {
+.form label.label_password {
   margin: 0 0 8px;
 }
-form .forgot-password {
+.form label.label_invalid p {
+  color: red;
+}
+.form label.label_invalid div {
+  border-color: red;
+}
+.form .forgot-password {
   font-weight: medium;
   font-size: 2.2rem;
   line-height: 145.4545454545%;
@@ -270,16 +281,16 @@ form .forgot-password {
   display: block;
   margin: 0 0 37px;
 }
-form .forgot-password:hover {
+.form .forgot-password:hover {
   color: white;
 }
 @media (max-width: 799px) {
-  form .forgot-password {
+  .form .forgot-password {
     font-size: 1.5rem;
     margin: 0 0 26px;
   }
 }
-form .button {
+.form .button {
   width: 100%;
   padding: 32px 10px;
   background-color: #4CB8E9;
@@ -290,19 +301,19 @@ form .button {
   line-height: 120%;
   cursor: pointer;
 }
-form .button:hover {
+.form .button:hover {
   background-color: white;
   color: #4CB8E9;
 }
 @media (max-width: 799px) {
-  form .button {
+  .form .button {
     padding: 20px 5px;
     font-size: 2rem;
   }
 }
 
 @media (max-width: 799px) {
-  form {
+  .form {
     max-width: 246px;
   }
 }
